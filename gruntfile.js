@@ -19,7 +19,7 @@ module.exports = function(grunt){
               unused: true
             },
             files: {
-                src: ['js/*.es6']
+                src: ['js/*.js', '!js/index.js']
             }
 
         },
@@ -27,7 +27,7 @@ module.exports = function(grunt){
             dist: {
                 files: {
                     // destination for transpiled js : source js
-                    'js/index.js': 'js/main.es6'
+                    'js/index.js': 'js/main.js'
                 },
                 options: {
                     transform: [['babelify', { presets: "env" }]],
@@ -41,7 +41,7 @@ module.exports = function(grunt){
         watch: {
            
             js: {
-                files: ['js/*.es6'],
+                files: ['js/*.js', '!js/index.js'],
                 tasks: ['jshint','browserify']
             }
         }
