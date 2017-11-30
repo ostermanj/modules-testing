@@ -1,0 +1,16 @@
+{
+  "name": "module-testing",
+  "version": "0.1.0",
+  "author": "John Osterman",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babelify": "^7.3.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^5.2.0",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "^1.0.0",
+    "matchdep": "*"
+  }
+}
